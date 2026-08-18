@@ -389,27 +389,22 @@ function Invite() {
           <div className="mx-auto flex max-w-xl items-center justify-center gap-6 sm:gap-12">
             <div className="flex-1">
               <div className="hairline" />
-              <p className="mt-4 text-[1.3rem] tracking-[0.35em] text-steel uppercase">Sábado</p>
+              <p className="mt-4 text-[1.5rem]">Sábado</p>
             </div>
-            <div className="flex flex-col items-center">
-              <span className="text-[1.3rem] tracking-[0.35em] text-steel uppercase">Setembro</span>
-              <span
-                className="my-1 text-5xl leading-none font-light text-deep sm:text-8xl"
-                style={{ fontFamily: "'Playfair Display', serif" }}
-              >
-                11
-              </span>
-              <span className="text-[1.3rem] tracking-[0.35em] text-steel">2027</span>
+            <div className="flex flex-col items-center text-[1.5rem]">
+              <span className="...">Setembro</span>
+              <span className="my-1 text-5xl leading-none font-light text-deep sm:text-8xl" style={{ fontFamily: "'Playfair Display', serif" }}>11</span>
+              <span className="...">2027</span>
             </div>
             <div className="flex-1">
               <div className="hairline" />
-              <p className="mt-4 text-[1.5rem] tracking-[0.35em] text-steel uppercase">Às 18h</p>
+              <p className="mt-4 text-[1.5rem]">Às 18h</p>
             </div>
           </div>
         </Reveal>
 
         <Reveal delay={200} className="mt-24">
-          <Label className="text-[3rem] sm:text-base">Faltam</Label>
+          <Label className="text-[1.7rem] sm:text-base">Faltam</Label>
           <div className="mx-auto mt-8 max-w-md">
             <Countdown />
           </div>
