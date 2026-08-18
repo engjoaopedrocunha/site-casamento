@@ -537,7 +537,7 @@ function Invite() {
           <p className="mt-6 text-[1.2rem] tracking-[0.45em] text-steel">11.09.2027</p>
           <Rule className="my-14" />
           <Monogram className="w-[80px] sm:w-[90px]" />
-          <p className="mx-auto mt-14 max-w-xs text-[1.8rem] leading-relaxed font-light text-steel italic">
+          <p className="mx-auto mt-14 max-w-xs text-[1rem] leading-relaxed font-light text-steel italic">
             “Que Deus abençoe nosso amor e nossa caminhada.”
           </p>
         </Reveal>
