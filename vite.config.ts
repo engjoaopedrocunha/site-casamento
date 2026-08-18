@@ -7,6 +7,6 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
-  base: "site-casamento",
+  base: "/",
   // ...resto da configuração que já existe (plugins, etc.)
 });
