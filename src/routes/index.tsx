@@ -389,27 +389,27 @@ function Invite() {
           <div className="mx-auto flex max-w-xl items-center justify-center gap-6 sm:gap-12">
             <div className="flex-1">
               <div className="hairline" />
-              <p className="mt-4 text-[0.68rem] tracking-[0.35em] text-steel uppercase">Sábado</p>
+              <p className="mt-4 text-[1.3rem] tracking-[0.35em] text-steel uppercase">Sábado</p>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-[0.68rem] tracking-[0.35em] text-steel uppercase">Setembro</span>
+              <span className="text-[1.3rem] tracking-[0.35em] text-steel uppercase">Setembro</span>
               <span
                 className="my-1 text-5xl leading-none font-light text-deep sm:text-8xl"
                 style={{ fontFamily: "'Playfair Display', serif" }}
               >
                 11
               </span>
-              <span className="text-[0.68rem] tracking-[0.35em] text-steel">2027</span>
+              <span className="text-[1.3rem] tracking-[0.35em] text-steel">2027</span>
             </div>
             <div className="flex-1">
               <div className="hairline" />
-              <p className="mt-4 text-[0.68rem] tracking-[0.35em] text-steel uppercase">Às 18h</p>
+              <p className="mt-4 text-[1.5rem] tracking-[0.35em] text-steel uppercase">Às 18h</p>
             </div>
           </div>
         </Reveal>
 
         <Reveal delay={200} className="mt-24">
-          <Label>Faltam</Label>
+          <Label className="text-[3rem] sm:text-base">Faltam</Label>
           <div className="mx-auto mt-8 max-w-md">
             <Countdown />
           </div>
@@ -439,7 +439,7 @@ function Invite() {
           style={{ transform: `rotate(180deg) translateY(${offset * 0.02}px)` }}
         />
         <Reveal className="relative mx-auto max-w-xl">
-          <h2 className="text-[0.72rem] tracking-[0.4em] text-steel uppercase sm:text-sm">
+          <h2 className="text-[1.3rem] tracking-[0.4em] text-steel uppercase sm:text-sm">
             Um dia para celebrar o amor
           </h2>
           <Rule className="my-10" />
@@ -453,7 +453,7 @@ function Invite() {
 
       {/* CERIMÔNIA E RECEPÇÃO */}
       <section className="px-6 py-28 sm:py-36">
-        <div className="mx-auto grid max-w-4xl gap-24 md:grid-cols-2 md:gap-16">
+        <div className="mx-auto grid max-w-5xl gap-24 md:grid-cols-2 md:gap-16">
           <Place
             label="Onde vamos celebrar"
             name={weddingConfig.church.name}
@@ -474,11 +474,11 @@ function Invite() {
       {/* PRESENTES */}
       <section className="bg-mist/40 px-6 py-28 sm:py-36">
         <Reveal className="mx-auto max-w-xl text-center">
-          <h2 className="text-[0.72rem] tracking-[0.4em] text-steel uppercase sm:text-sm">
+          <h2 className="text-[1.5rem] tracking-[0.4em] text-steel uppercase sm:text-sm">
             Um presente para nossa nova história
           </h2>
           <Rule className="my-10" />
-          <p className="text-base leading-relaxed font-light text-deep/80 sm:text-lg">
+          <p className="text-base leading-relaxed font-light text-deep/80 sm:text-[1.8rem]">
             Se desejar nos presentear, disponibilizamos algumas opções de lista para facilitar sua
             escolha.
           </p>
@@ -496,7 +496,7 @@ function Invite() {
             <Reveal key={card.title}>
               <article className="flex h-full flex-col items-center border border-serenity/50 bg-ivory px-8 py-14 text-center">
                 <Gift className="h-5 w-5 text-serenity" strokeWidth={1} />
-                <p className="mt-8 text-[0.62rem] tracking-[0.3em] text-steel uppercase">
+                <p className="mt-8 text-[1rem] tracking-[0.3em] text-steel uppercase">
                   {card.label}
                 </p>
                 <h3 className="mt-3 text-2xl font-light text-deep">{card.title}</h3>
@@ -515,7 +515,7 @@ function Invite() {
           <Reveal>
             <article className="flex h-full flex-col items-center border border-serenity/50 bg-ivory px-8 py-14 text-center">
               <Gift className="h-5 w-5 text-serenity" strokeWidth={1} />
-              <p className="mt-8 text-[0.62rem] tracking-[0.3em] text-steel uppercase">Presente</p>
+              <p className="mt-8 text-[1rem] tracking-[0.3em] text-steel uppercase">Presente</p>
               <h3 className="mt-3 text-2xl font-light text-deep">via Pix</h3>
               <p className="mt-5 max-w-[15rem] text-sm leading-relaxed text-steel">
                 Se preferir, você também pode nos presentear através do Pix.
@@ -539,10 +539,10 @@ function Invite() {
             <span className="mx-3 font-serif text-2xl font-light text-steel italic">&</span>
             {weddingConfig.groom}
           </p>
-          <p className="mt-6 text-[0.7rem] tracking-[0.45em] text-steel">11.09.2027</p>
+          <p className="mt-6 text-[1.2rem] tracking-[0.45em] text-steel">11.09.2027</p>
           <Rule className="my-14" />
           <Monogram className="w-[80px] sm:w-[90px]" />
-          <p className="mx-auto mt-14 max-w-xs text-sm leading-relaxed font-light text-steel italic">
+          <p className="mx-auto mt-14 max-w-xs text-[1.8rem] leading-relaxed font-light text-steel italic">
             “Que Deus abençoe nosso amor e nossa caminhada.”
           </p>
         </Reveal>
