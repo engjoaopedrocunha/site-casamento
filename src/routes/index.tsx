@@ -4,6 +4,7 @@ import { Gift, Music2, Pause, X } from "lucide-react";
 import churchAsset from "@/assets/church-watercolor.png";
 import sprigAsset from "@/assets/sprig.png";
 import monogramAsset from "@/assets/monogram.png";
+import { cn } from "@/lib/utils";
 
 /* ------------------------------------------------------------------ */
 /*  CONFIGURAÇÃO EDITÁVEL                                              */
@@ -125,7 +126,7 @@ function Rule({ className = "" }: { className?: string }) {
 function Label({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
     <p
-      className={`font-serif text-[0.68rem] tracking-[0.42em] text-steel uppercase sm:text-xs ${className}`}
+      className={cn("font-serif text-[0.68rem] tracking-[0.42em] text-steel uppercase sm:text-xs", className)}
     >
       {children}
     </p>
@@ -224,11 +225,11 @@ function Place({
 }) {
   return (
     <Reveal className="flex flex-col items-center gap-5 px-2 text-center">
-      <Label>{label}</Label>
-      <h3 className="max-w-sm font-serif text-2xl leading-snug font-light text-deep sm:text-3xl">
+      <Label className="font-bold text-base sm:text-base">{label}</Label>
+      <h3 className="max-w-sm font-serif text-2xl leading-snug font-ligth text-deep sm:text-3xl">
         {name}
       </h3>
-      <p className="font-serif text-lg tracking-[0.3em] text-steel">{time}</p>
+      <p className="font-serif text-lg font-bold tracking-[0.3em] text-steel">{time}</p>
       <p className="max-w-xs font-serif text-sm leading-relaxed text-steel">{address}</p>
       <a
         href={mapsLink}
@@ -434,7 +435,7 @@ function Invite() {
           style={{ transform: `rotate(180deg) translateY(${offset * 0.02}px)` }}
         />
         <Reveal className="relative mx-auto max-w-xl">
-          <h2 className="text-[1.3rem] tracking-[0.4em] text-steel uppercase sm:text-sm">
+          <h2 className="text-[1.5rem] tracking-[0.4em] text-steel uppercase sm:text-[1.5rem]">
             Um dia para celebrar o amor
           </h2>
           <Rule className="my-10" />
@@ -452,12 +453,12 @@ function Invite() {
           <Place
             label="Onde vamos celebrar"
             name={weddingConfig.church.name}
-            time="18h"
+            time="18h30"
             address={weddingConfig.church.address}
             mapsLink={weddingConfig.church.mapsLink}
           />
           <Place
-            label="E depois, vamos celebrar"
+            label="E depois, vamos festejar"
             name={weddingConfig.reception.name}
             time="21h"
             address={weddingConfig.reception.address}
@@ -469,11 +470,11 @@ function Invite() {
       {/* PRESENTES */}
       <section className="bg-mist/40 px-6 py-28 sm:py-36">
         <Reveal className="mx-auto max-w-xl text-center">
-          <h2 className="text-[1.5rem] tracking-[0.4em] text-steel uppercase sm:text-sm">
+          <h2 className="text-[1.3rem] tracking-[0.4em] text-steel uppercase sm:text-[1.3rem]">
             Um presente para nossa nova história
           </h2>
           <Rule className="my-10" />
-          <p className="text-base leading-relaxed font-light text-deep/80 sm:text-[1.8rem]">
+          <p className="text-[1rem] leading-relaxed font-light text-deep/80 sm:text-[1.8rem]">
             Se desejar nos presentear, disponibilizamos algumas opções de lista para facilitar sua
             escolha.
           </p>
