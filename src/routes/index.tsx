@@ -235,7 +235,7 @@ function Place({
         href={mapsLink}
         target="_blank"
         rel="noreferrer"
-        className="mt-2 inline-flex min-h-11 items-center justify-center border border-serenity px-8 font-serif text-[0.7rem] tracking-[0.32em] text-deep uppercase transition-all duration-500 hover:border-deep hover:bg-mist/60"
+        className="mt-2 inline-flex min-h-11 items-center justify-center border border-serenity px-8 font-serif text-[0.85rem] tracking-[0.32em] text-deep uppercase transition-all duration-500 hover:border-deep hover:bg-mist/60"
       >
         Como chegar
       </a>
