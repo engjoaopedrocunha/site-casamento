@@ -226,7 +226,7 @@ function Place({
   return (
     <Reveal className="flex flex-col items-center gap-5 px-2 text-center">
       <Label className="font-bold text-base sm:text-base">{label}</Label>
-      <h3 className="max-w-sm font-serif text-2xl leading-snug font-ligth text-deep sm:text-3xl">
+      <h3 className="max-w-sm font-serif text-2xl leading-snug font-light text-deep sm:text-3xl">
         {name}
       </h3>
       <p className="font-serif text-lg font-bold tracking-[0.3em] text-steel">{time}</p>
